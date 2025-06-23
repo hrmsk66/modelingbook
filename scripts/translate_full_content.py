@@ -268,6 +268,8 @@ def create_html_file(filename, content, title):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow">
     <title>{title} - SnowflakeによるデータモデリングLab</title>
     <link rel="stylesheet" href="{"../css/style.css" if "chapter" in filename or "part1/" in filename else "css/style.css"}">
 </head>

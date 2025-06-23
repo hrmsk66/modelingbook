@@ -1,4 +1,49 @@
+# Python
 *.pyc
 __pycache__/
+.Python
+env/
+venv/
+.env
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+orig/
 *.txt
+
+chapter1_images/
+chapter*_images/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Local development
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Node (将来的に使用する可能性のため)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

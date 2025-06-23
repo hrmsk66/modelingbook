@@ -1,0 +1,11 @@
+# .htaccess - 追加のアクセス制御（Apacheサーバーの場合）
+
+# 検索エンジンのインデックスを防ぐ
+Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+
+# キャッシュ制御
+<IfModule mod_headers.c>
+    Header set Cache-Control "private, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
