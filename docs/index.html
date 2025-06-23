@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowflakeによるデータモデリングLab - 実践的データモデリング技法</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="preface.html">はじめに</a></li>
+            <li><a href="part1/index.html">第1部</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>SnowflakeによるデータモデリングLab</h1>
+        <h2>実践的データモデリング技法とSnowflakeアーキテクチャの融合</h2>
+
+        <p>このサイトは「Data Modeling with Snowflake」の内容を日本語で学習するための個人的な学習リソースです。クラウドデータプラットフォームの代表格であるSnowflakeを使用した効果的なデータモデリング手法について、実践的な観点から解説していきます。</p>
+
+        <div class="notice">
+            <div class="notice-title">📚 学習目的のコンテンツ</div>
+            <p>このサイトは個人的な学習を目的として作成されています。原著の理解を深めるため、LLMの支援を受けて内容を拡張・補完しています。</p>
+        </div>
+
+        <h2>コンテンツ構成</h2>
+        
+        <div class="toc">
+            <h3>目次</h3>
+            <ul>
+                <li><a href="preface.html">はじめに - 本書の目的と対象読者</a></li>
+                <li>
+                    <strong>第1部: データモデリングとSnowflakeアーキテクチャの基本概念</strong>
+                    <ul>
+                        <li><a href="part1/index.html">第1部の概要</a></li>
+                        <li><a href="part1/chapter1.html"><span class="chapter-number">第1章</span>モデリングの力を解き放つ</a></li>
+                        <li><span class="chapter-number">第2章</span>4つのモデリングタイプの紹介（準備中）</li>
+                        <li><span class="chapter-number">第3章</span>Snowflakeアーキテクチャのマスター（準備中）</li>
+                        <li><span class="chapter-number">第4章</span>Snowflakeオブジェクトのマスター（準備中）</li>
+                        <li><span class="chapter-number">第5章</span>Snowflakeオブジェクトを通じたモデリング（準備中）</li>
+                        <li><span class="chapter-number">第6章</span>モデリング記法を通じたSnowflakeアーキテクチャの理解（準備中）</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>第2部: データモデリングの実践（準備中）</strong>
+                </li>
+                <li>
+                    <strong>第3部: 高度なモデリング技法（準備中）</strong>
+                </li>
+            </ul>
+        </div>
+
+        <h2>学習の進め方</h2>
+        <p>本サイトは、データエンジニア、データアーキテクト、ビジネスアナリストの方々を対象に、Snowflakeでの実践的なデータモデリング手法を体系的に学べるよう構成されています。各章では以下のアプローチで学習を進めます：</p>
+
+        <ol>
+            <li><strong>概念の理解</strong> - 各モデリング手法の基本概念を日本語でわかりやすく解説</li>
+            <li><strong>Snowflake固有の機能</strong> - Snowflakeの革新的な機能をどのようにモデリングに活用するか</li>
+            <li><strong>実践的な例</strong> - 実際のビジネスシナリオに基づいた具体例</li>
+            <li><strong>ベストプラクティス</strong> - コスト効率とパフォーマンスを両立させる設計手法</li>
+        </ol>
+
+        <h2>Snowflakeの革新的な特徴</h2>
+        <p>Snowflakeは従来のデータウェアハウスとは異なる、以下のような画期的な特徴を持っています：</p>
+
+        <ul>
+            <li><strong>完全に分離されたコンピュートとストレージ</strong> - 必要に応じて独立してスケーリング可能</li>
+            <li><strong>消費ベースの価格モデル</strong> - 使用した分だけ支払う柔軟な料金体系</li>
+            <li><strong>ゼロメンテナンス</strong> - インデックスやパーティショニングの手動管理が不要</li>
+            <li><strong>セミ構造化データのネイティブサポート</strong> - JSONやParquetなどのデータを直接クエリ可能</li>
+        </ul>
+
+        <p>これらの特徴を理解し、モデリング手法と組み合わせることで、真に効果的なデータプラットフォームを構築することができます。</p>
+
+        <footer>
+            <p>個人学習用コンテンツ | 最終更新: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('lastUpdate').textContent = new Date().toLocaleDateString('ja-JP');
+    </script>
+</body>
+</html>

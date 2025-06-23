@@ -1,0 +1,239 @@
+/* 日本語の可読性を考慮したスタイルシート */
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #3b82f6;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --border-color: #e2e8f0;
+  --code-bg: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ナビゲーション */
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+nav li {
+  margin-right: 2rem;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* コードブロック */
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+code {
+  background-color: var(--code-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+/* リスト */
+ul, ol {
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* 引用 */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: var(--code-bg);
+  font-weight: 600;
+}
+
+/* フッター */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 目次 */
+.toc {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.toc h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.toc li {
+  margin-bottom: 0.5rem;
+}
+
+.toc a {
+  color: var(--text-color);
+}
+
+.toc a:hover {
+  color: var(--secondary-color);
+}
+
+/* 章の番号 */
+.chapter-number {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* 注意事項ボックス */
+.notice {
+  background-color: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.notice-title {
+  font-weight: 600;
+  color: #d97706;
+  margin-bottom: 0.5rem;
+}
