@@ -237,3 +237,46 @@ footer {
   color: #d97706;
   margin-bottom: 0.5rem;
 }
+
+/* 画像 */
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* 画像が直接配置された場合 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+/* ボックス */
+.box {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.box h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
